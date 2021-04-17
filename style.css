@@ -1,3 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+:root {
+    --white: #FAFAFF;
+    --black: #333333;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+.topbar {
+    display: flex;
+    width: 100vw;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D1E2C
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1.5rem;
+}
+
+nav a {
+    padding: 1.2rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    height: 100vh;
+}
+
 .smaller-image {
     width: 30%;
     height: 30%;
