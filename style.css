@@ -12,14 +12,14 @@
     color: var(--black);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1500px) {
     * {
         font-size: 1.2rem;
     }
     
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     * {
         font-size: 1rem;
     }
@@ -89,17 +89,17 @@ nav a:hover {
     padding-top: 3rem;
 }
 
-#intro {
-    padding: 0 2rem 3rem 2rem;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
 .profile-pic {
     border-radius: 50%;
     width: 14rem;
     height: 14rem;
     margin-bottom: 2rem;
+}
+
+#intro {
+    padding: 0 2rem 3rem 2rem;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 hr {
