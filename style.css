@@ -1,16 +1,25 @@
+:root {
+    --white: #FAFAFF;
+    --black: #333333;
+    --lightBg: #FFFAE2;
+    --lightNav: #364763;
+    --mainFont: 'Mukta', sans-serif;
+    background-color: var(--lightBg);
+    color: var(--black);
+    font-family: var(--mainFont);
+    max-height: 100vh;
+}
+
 * {
     padding: 0;
     margin: 0;
     font-size: 0.9rem;
-    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
 }
 
-:root {
-    --white: #FAFAFF;
-    --black: #333333;
-    background-color: #FFFAE2;
-    color: var(--black);
-}
+
+/* Media queries */
+/* ************ */
 
 /* @media only screen and (max-width: 2000px) {
     * {
@@ -40,22 +49,18 @@
     
 }
 
-h2 {
-    font-size: 3.5rem;
 
-}
-div h2:nth-of-type(1) {
-    font-size: 1.5rem;
-    opacity: 0.7;
-}
+/* Header elements */
+/* *************** */
 
 .topbar {
     display: flex;
+    box-sizing: content-box;
     width: 100vw;
     height: 5rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #364763;
+    background-color: var(--lightNav);
 }
 
 .logo {
@@ -77,9 +82,26 @@ nav a:hover {
     text-decoration: underline;
 }
 
+h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 3.6rem;
+    padding-bottom: 2rem;
+}
+
+#hello {
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+
+/* Content area */
+/* ************ */
+
 .content {
-    height: calc(100vh - 5rem);
+    box-sizing: content-box;
     margin: 0 10% 0 10%;
+    height: calc(100vh - 5rem);
 }
 
 #landing {
@@ -102,11 +124,13 @@ nav a:hover {
     text-align: center;
 }
 
-hr {
-    width: 20rem;
-    color:var(--black);
+.line {
+    border-bottom: 1px solid var(--black);
 }
 
+
+/* Footer area */
+/* ************ */
 
 footer a {
     margin: 0.5rem;
