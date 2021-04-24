@@ -41,7 +41,7 @@
                     <textarea name="msg" id="msg" placeholder="Type your message"></textarea>
                 </label>
                 <div class="btnbox">
-                    <button type="submit" class="btn btn-submit">Submit</button>
+                    <button id="btn-sub" type="submit" class="btn btn-submit">Submit</button>
                     <button type="reset" class="btn btn-reset">Reset me :(</button>
                 </div>   
             </form>
@@ -52,6 +52,19 @@
             <a href="https://twitter.com/Sharpskeith" target="_blank"><img src="assets/iconfinder_twitter_online_social_media_734367.svg" alt="Twitter logo" class="social-icon"></a>
             <a href="https://github.com/ddavies90" target="_blank"><img src="assets/iconfinder_social_media_logo_github_1221585.svg" alt="Github logo" class="social-icon"></a>
         </footer>
+        <script>
+            var nameInput = document.querySelector('#name').value;
+            var emailInput = document.getElementById('email').value;
+            var msgInput = document.getElementById('msg').value;
+
+            document.getElementById('btn-sub').addEventListener("click", function(e) {
+                let nameInput = document.querySelector('#name').value;
+                let emailInput = document.getElementById('email').value;
+                let msgInput = document.getElementById('msg').value;
+                e.preventDefault();
+                alert('According to the form, your name is ' + nameInput + ' your email is ' + emailInput + ' and the nonsense you wish to tell me is ' + '\"' + msgInput + '\"');
+            });
+        </script>
     </div>
 </body>
 </html>
